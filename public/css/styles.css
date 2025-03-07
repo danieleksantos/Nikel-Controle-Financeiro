@@ -46,6 +46,14 @@ header {
     margin: 0 25%;
 }
 
+.border-bottom {
+    border-bottom: 1px solid #BEBCDC;
+}
+
+.border-left {
+    border-left: 1px solid #BEBCDC;
+}
+
 .button-login:hover,
 .button-default:hover,
 .button-cancel:hover {
@@ -108,6 +116,16 @@ header {
 
 .menu {
     margin-right: 20px;
+}
+
+.btn-danger {
+    border-radius: 100%;
+    width: 20px;
+    height: 20px;
+    display: flex;
+    align-items:center;
+    justify-content: center;
+    font-size: 10px;
 }
 
 @media (min-width: 1400px) {

@@ -66,28 +66,38 @@ function logout() {
     window.location.href = "index.html";
 }
 
-function getTransactions () {
+function getTransactions() {
     const transactions = data.transactions;
     let transactionsHtml = ``;
 
     if (transactions.length) {
-        transactions.forEach((item) => {
-            let = type = "Entrada";
-
-            if (item.type === "2") {
-                type = "Saída";
-            }
+        transactions.forEach((item, index) => {
+            let type = item.type === "2" ? "Saída" : "Entrada";
 
             transactionsHtml += `
             <tr>
                 <th scope="row">${item.date}</th>
-                <td>${item.value.toFixed(2)}</td>
+                <td>R$ ${item.value.toFixed(2)}</td>
                 <td>${type}</td>
                 <td>${item.description}</td>
+                <td>
+                    <button class="btn btn-danger btn-sm" onclick="deleteTransaction(${index})">X</button>
+                </td>
             </tr>
-            `
+            `;
         });
     }
 
     document.getElementById("transactions-list").innerHTML = transactionsHtml;
 }
+
+function deleteTransaction(index) {
+    const confirmDelete = confirm("Tem certeza que deseja excluir esta transação?");
+
+    if (confirmDelete) {
+        data.transactions.splice(index, 1);
+        saveData(data);
+        getTransactions();
+    }
+}
+
