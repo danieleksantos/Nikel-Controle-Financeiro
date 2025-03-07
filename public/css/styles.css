@@ -1,0 +1,118 @@
+#login {
+    background: linear-gradient(120deg, #4C79D3 44.9%, #FFFFFF 45%) no-repeat fixed;
+}
+
+#app {
+    background: linear-gradient(120deg, #FFFFFF 44.9%, #4C79D3 45%) no-repeat fixed;
+}
+
+header {
+    border-bottom: 1px solid #BEBCDC;
+    padding: 5px;
+    background-color: #FFFFFF;
+}
+
+.color-primary {
+    color: #4E0070;
+}
+
+.color-secundary {
+    color: #4C79D3;
+}
+
+.icon-detail {
+    font-size: 50px;
+    margin-right: 10px;
+    vertical-align: middle;
+}
+
+.navbar-collapse div {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 0.1px; 
+}
+.text-login {
+    color:#FFFFFF;
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.button-login {
+    border-radius: 10px;
+    background-color: #4E0070;
+    color: #FFFFFF;
+    width: 50%;
+    margin: 0 25%;
+}
+
+.button-login:hover,
+.button-default:hover,
+.button-cancel:hover {
+    background-color: #4C79D3;
+    color: #FFFFFF;
+}
+
+.button-default {
+    border-radius: 10px;
+    color: #FFFFFF;
+    background-color: #4E0070;
+    border: none;
+}
+
+.button-cancel {
+    border-radius: 10px;
+    color: #FFFFFF;
+    background-color: #4E0070;
+    border: none;
+}
+
+.button-float {
+    border-radius: 100%;
+    height: 60px;
+    width: 60px;
+    position: fixed;
+    bottom: 1rem;
+    right: 2rem;
+    background-color: #4E0070;
+    color: #FFFFFF;
+    font-size: 35px;
+    padding: 0 !important;
+    border: 2px solid #4E0070;
+}
+
+.button-float:hover {
+    border: 2px solid #4C79D3;
+    background-color: #FFFFFF;
+    color: #4C79D3;
+}
+
+.link-default {
+    color: #4E0070;
+    cursor: pointer;
+}
+
+.link-default:hover {
+    color: #4C79D3;
+}
+
+.info {
+    background-color: #FFFFFF;
+    border-radius: 20px 20px 0 0;
+    padding: 20px 0 0;
+}
+
+.logout{
+    min-width: 5rem !important;
+}
+
+.menu {
+    margin-right: 20px;
+}
+
+@media (min-width: 1400px) {
+    .d-md-inline {
+        position: absolute;
+        bottom: 0;
+    }
+}
