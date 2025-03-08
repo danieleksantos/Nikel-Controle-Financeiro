@@ -1,9 +1,19 @@
+:root {
+    --primary-color: #4E0070;
+    --secundary-color: #008000;
+}
+
+*{
+    font-family: 'Poppins', 'Courier New', Courier, monospace;
+
+}
+
 #login {
-    background: linear-gradient(120deg, #4C79D3 44.9%, #FFFFFF 45%) no-repeat fixed;
+    background: linear-gradient(120deg, var(--secundary-color) 44.9%, #FFFFFF 45%) no-repeat fixed;
 }
 
 #app {
-    background: linear-gradient(120deg, #FFFFFF 44.9%, #4C79D3 45%) no-repeat fixed;
+    background: linear-gradient(120deg, #FFFFFF 44.9%, var(--secundary-color) 45%) no-repeat fixed;
 }
 
 header {
@@ -13,11 +23,11 @@ header {
 }
 
 .color-primary {
-    color: #4E0070;
+    color: var(--primary-color);
 }
 
 .color-secundary {
-    color: #4C79D3;
+    color: var(--secundary-color);
 }
 
 .icon-detail {
@@ -40,7 +50,7 @@ header {
 
 .button-login {
     border-radius: 10px;
-    background-color: #4E0070;
+    background-color: var(--primary-color);
     color: #FFFFFF;
     width: 50%;
     margin: 0 25%;
@@ -56,22 +66,27 @@ header {
 
 .button-login:hover,
 .button-default:hover,
-.button-cancel:hover {
-    background-color: #4C79D3;
-    color: #FFFFFF;
+.button-cancel:hover
+{
+    background-color: var(--secundary-color) !important;
+    color: #FFFFFF !important;
+}
+
+.btn:hover {
+    color: var(--secundary-color);
 }
 
 .button-default {
     border-radius: 10px;
     color: #FFFFFF;
-    background-color: #4E0070;
+    background-color: var(--primary-color);
     border: none;
 }
 
 .button-cancel {
     border-radius: 10px;
     color: #FFFFFF;
-    background-color: #4E0070;
+    background-color: var(--primary-color);
     border: none;
 }
 
@@ -82,26 +97,64 @@ header {
     position: fixed;
     bottom: 1rem;
     right: 2rem;
-    background-color: #4E0070;
+    background-color: var(--primary-color);
     color: #FFFFFF;
     font-size: 35px;
     padding: 0 !important;
-    border: 2px solid #4E0070;
+    border: 2px solid var(--primary-color);
 }
 
 .button-float:hover {
-    border: 2px solid #4C79D3;
+    border: 2px solid var(--secundary-color);
     background-color: #FFFFFF;
-    color: #4C79D3;
+    color: var(--secundary-color);
 }
 
 .link-default {
-    color: #4E0070;
+    color: var(--primary-color);
     cursor: pointer;
 }
 
 .link-default:hover {
-    color: #4C79D3;
+    color: var(--secundary-color);
+}
+
+.coins {
+    animation: brilho 2s infinite ease-in-out;
+}
+
+@keyframes brilho {
+    0% { filter: brightness(1); }
+    50% { filter: brightness(1.1); }
+    100% { filter: brightness(1); }
+}
+
+.logo-codai {
+    animation: wiggle 2.2s linear infinite; 
+}
+
+@keyframes wiggle {
+    0% {
+        transform: rotate(0);
+    }
+    15% {
+        transform: rotate(-15deg);
+    }
+    20% {
+        transform: rotate(10deg);
+    }
+    25% {
+        transform: rotate(-10deg);
+    }
+    30% {
+        transform: rotate(10deg);
+    }
+    35% {
+        transform: rotate(-10deg);
+    }
+    40%, 100% {
+        transform: rotate(0);
+    }
 }
 
 .info {
@@ -135,3 +188,10 @@ header {
     }
 }
 
+@media (max-width: 780px) {
+    .text-login {
+        color:#FFFFFF;
+        background-color: var(--secundary-color); 
+        border-radius: 10px;      
+    }
+}
