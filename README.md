@@ -4,7 +4,7 @@
 
 > 🚀 Este projeto foi desenvolvido como parte do curso **Codaí 2.0 da Growdev**.
 
-## 🚀 Tecnologias Utilizadas
+## 🛠️ Tecnologias Utilizadas
 
 - **HTML5**: Estruturação semântica das páginas.
 - **CSS3**: Estilização com uso de Flexbox e Grid Layout.
