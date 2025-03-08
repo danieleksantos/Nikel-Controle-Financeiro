@@ -2,9 +2,6 @@
 
 **Nikel** é uma aplicação web que auxilia os usuários a gerenciarem suas finanças pessoais de maneira eficiente, permitindo o controle de receitas, despesas e investimentos.
 
-![Badge Status](https://img.shields.io/badge/Status-Em%20Desenvolvimento-yellow)
-![Badge License](https://img.shields.io/badge/Licença-MIT-blue)
-
 > 🚀 Este projeto foi desenvolvido como parte do curso **Codaí 2.0 da Growdev**.
 
 ## 🚀 Tecnologias Utilizadas
@@ -29,16 +26,3 @@ Acesse a aplicação em funcionamento: [Nikel - Controle Financeiro](https://dan
 ## 🎨 Layout
 
 O design da aplicação foi desenvolvido com foco na simplicidade e usabilidade, garantindo uma experiência intuitiva para o usuário.
-
-## 📦 Como Executar o Projeto Localmente
-
-### **Pré-requisitos**
-
-- Navegador web atualizado.
-
-### **Passos para Execução**
-
-1. **Clone o repositório:**
-
-   ```bash
-   git clone https://github.com/danieleksantos/Nikel-Controle-Financeiro.git
